@@ -1,300 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="msvalidate.01" content="05DD328771961037A39A772236A37547" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Darshan N Lal | Web Developer & Founder of MTC</title>
+    <title>Darshan N Lal - Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.0/lucide.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        
         body {
             font-family: 'Inter', sans-serif;
-            scroll-behavior: smooth;
-            background-color: #0a0a0a;
-            color: #f4f4f5;
-        }
-
-        .gradient-text {
-            background: linear-gradient(90deg, #60a5fa, #a855f7);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .glass-card {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: transform 0.3s ease, border-color 0.3s ease;
-        }
-
-        .glass-card:hover {
-            transform: translateY(-5px);
-            border-color: rgba(96, 165, 250, 0.5);
-        }
-
-        .nav-link {
-            transition: color 0.3s ease;
-        }
-
-        .nav-link:hover {
-            color: #60a5fa;
-        }
-
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #0a0a0a;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #27272a;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #3f3f46;
-        }
-
-        #hero-canvas {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
         }
     </style>
 </head>
-<body class="overflow-x-hidden">
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between p-6 md:p-12">
 
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 px-6 py-4 flex justify-between items-center bg-black/50 backdrop-blur-md border-b border-white/5">
-        <div class="text-xl font-bold tracking-tighter">
-            DARSHAN<span class="text-blue-500">.</span>
+    <!-- Header Section -->
+    <header class="max-w-3xl mx-auto w-full text-center my-8">
+        <div class="inline-block p-3 rounded-full bg-indigo-500/10 text-indigo-400 font-semibold text-sm mb-4 border border-indigo-500/20">
+            Welcome to my site
         </div>
-        <div class="hidden md:flex space-x-8 text-sm font-medium text-zinc-400">
-            <a href="#home" class="nav-link">Home</a>
-            <a href="#mtc" class="nav-link">MTC</a>
-            <a href="#projects" class="nav-link">Projects</a>
-        </div>
-        <a href="https://github.com/MTC2026" target="_blank" class="bg-white text-black px-4 py-2 rounded-full text-xs font-bold hover:bg-zinc-200 transition">
-            GITHUB
-        </a>
-    </nav>
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4 bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+            Darshan N Lal
+        </h1>
+        <p class="text-lg md:text-xl text-slate-400 max-w-lg mx-auto">
+            A 13-year-old passionate learner exploring web design and development.
+        </p>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
-        <canvas id="hero-canvas"></canvas>
-        <div class="container mx-auto px-6 text-center z-10">
-            <h2 class="text-blue-400 font-mono text-sm mb-4 tracking-widest uppercase">Web Developer & Visionary</h2>
-            <h1 class="text-5xl md:text-8xl font-bold mb-6 tracking-tight">
-                Darshan N Lal
-            </h1>
-            <p class="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-                Crafting high-performance web experiences with <span class="text-white">JS, HTML, & CSS</span>. 
-                Founder of <span class="gradient-text font-bold">MTC (Master of Tech Companies)</span>.
-            </p>
-            <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="#projects" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-xl font-semibold transition flex items-center justify-center gap-2">
-                    View My Work <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
-                <a href="https://github.com/MTC2026" target="_blank" class="bg-zinc-900 border border-zinc-800 hover:border-zinc-700 text-white px-8 py-4 rounded-xl font-semibold transition flex items-center gap-2">
-                    Explore GitHub <i data-lucide="github" class="w-4 h-4"></i>
-                </a>
-            </div>
-        </div>
-    </section>
+    <!-- Web Technology Definitions Section -->
+    <main class="max-w-4xl mx-auto w-full my-8">
+        <h2 class="text-2xl font-bold mb-6 text-center text-slate-200">
+            Core Web Technologies
+        </h2>
 
-    <!-- MTC Section -->
-    <section id="mtc" class="py-24 bg-zinc-950/50">
-        <div class="container mx-auto px-6">
-            <div class="glass-card p-8 md:p-12 rounded-3xl flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-1/2">
-                    <div class="inline-block p-3 bg-blue-500/10 rounded-2xl mb-6">
-                        <i data-lucide="briefcase" class="w-8 h-8 text-blue-500"></i>
-                    </div>
-                    <h3 class="text-3xl font-bold mb-4">Master of Tech Companies (MTC)</h3>
-                    <p class="text-zinc-400 text-lg mb-6">
-                        MTC is the frontier of web innovation. As the founder, I lead the vision of building scalable, 
-                        modern, and accessible tech solutions for businesses globally. We don't just write code; 
-                        we architect the future of the web.
-                    </p>
-                    <ul class="space-y-4">
-                        <li class="flex items-center gap-3 text-zinc-300">
-                            <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i> Scalable Web Architecture
-                        </li>
-                        <li class="flex items-center gap-3 text-zinc-300">
-                            <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i> Modern Frontend Engineering
-                        </li>
-                        <li class="flex items-center gap-3 text-zinc-300">
-                            <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i> Strategic Tech Consulting
-                        </li>
-                    </ul>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- HTML Card -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 transition-all duration-300 hover:border-orange-500/50 hover:shadow-lg hover:shadow-orange-500/10">
+                <div class="w-12 h-12 bg-orange-500/10 border border-orange-500/20 rounded-xl flex items-center justify-center font-bold text-orange-400 mb-4 text-xl">
+                    &lt;/&gt;
                 </div>
-                <div class="md:w-1/2 grid grid-cols-2 gap-4">
-                    <div class="bg-zinc-900/50 p-6 rounded-2xl border border-zinc-800 text-center">
-                        <h4 class="text-4xl font-bold text-white mb-2 uppercase">JS</h4>
-                        <p class="text-[10px] text-zinc-500 uppercase tracking-widest font-bold">Logic & Power</p>
-                    </div>
-                    <div class="bg-zinc-900/50 p-6 rounded-2xl border border-zinc-800 text-center">
-                        <h4 class="text-4xl font-bold text-white mb-2 uppercase">HTML</h4>
-                        <p class="text-[10px] text-zinc-500 uppercase tracking-widest font-bold">Structure</p>
-                    </div>
-                    <div class="bg-zinc-900/50 p-6 rounded-2xl border border-zinc-800 text-center">
-                        <h4 class="text-4xl font-bold text-white mb-2 uppercase">CSS</h4>
-                        <p class="text-[10px] text-zinc-500 uppercase tracking-widest font-bold">Aesthetics</p>
-                    </div>
-                    <div class="bg-zinc-900/50 p-6 rounded-2xl border border-zinc-800 text-center">
-                        <h4 class="text-4xl font-bold text-white mb-2 uppercase">MTC</h4>
-                        <p class="text-[10px] text-zinc-500 uppercase tracking-widest font-bold">Tech Leadership</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-24">
-        <div class="container mx-auto px-6">
-            <div class="flex justify-between items-end mb-12">
-                <div>
-                    <h2 class="text-4xl font-bold mb-4 uppercase tracking-tight">Project Portfolio</h2>
-                    <p class="text-zinc-500">Development highlights from Darshan N Lal and MTC.</p>
-                </div>
-                <a href="https://github.com/MTC2026" target="_blank" class="text-blue-500 hover:text-blue-400 flex items-center gap-2 font-medium">
-                    GitHub Profile <i data-lucide="external-link" class="w-4 h-4"></i>
-                </a>
+                <h3 class="text-xl font-bold text-slate-100 mb-2">HTML</h3>
+                <p class="text-xs font-semibold uppercase tracking-wider text-orange-400 mb-3">HyperText Markup Language</p>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    The standard markup language used to structure web pages. It defines elements like headings, paragraphs, links, images, and overall content layout.
+                </p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="glass-card rounded-2xl overflow-hidden group">
-                    <div class="h-48 bg-zinc-800/50 flex items-center justify-center group-hover:bg-zinc-800 transition">
-                        <i data-lucide="layout" class="w-12 h-12 text-zinc-600"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Enterprise Hub</h3>
-                        <p class="text-zinc-400 text-sm mb-4">Advanced management system for high-scale tech enterprises.</p>
-                        <div class="flex gap-2">
-                            <span class="text-[10px] bg-zinc-800 px-2 py-1 rounded text-zinc-400 uppercase">JavaScript</span>
-                            <span class="text-[10px] bg-zinc-800 px-2 py-1 rounded text-zinc-400 uppercase">Architecture</span>
-                        </div>
-                    </div>
+            <!-- CSS Card -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 transition-all duration-300 hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/10">
+                <div class="w-12 h-12 bg-blue-500/10 border border-blue-500/20 rounded-xl flex items-center justify-center font-bold text-blue-400 mb-4 text-xl">
+                    #
                 </div>
+                <h3 class="text-xl font-bold text-slate-100 mb-2">CSS</h3>
+                <p class="text-xs font-semibold uppercase tracking-wider text-blue-400 mb-3">Cascading Style Sheets</p>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    The language used to design and style HTML elements. It controls colors, fonts, spacing, layouts, and responsive design across different screen sizes.
+                </p>
+            </div>
 
-                <!-- Project 2 -->
-                <div class="glass-card rounded-2xl overflow-hidden group">
-                    <div class="h-48 bg-zinc-800/50 flex items-center justify-center group-hover:bg-zinc-800 transition">
-                        <i data-lucide="zap" class="w-12 h-12 text-zinc-600"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">SpeedLayer</h3>
-                        <p class="text-zinc-400 text-sm mb-4">Core performance optimization utility for web assets.</p>
-                        <div class="flex gap-2">
-                            <span class="text-[10px] bg-zinc-800 px-2 py-1 rounded text-zinc-400 uppercase">HTML5</span>
-                            <span class="text-[10px] bg-zinc-800 px-2 py-1 rounded text-zinc-400 uppercase">CSS3</span>
-                        </div>
-                    </div>
+            <!-- JS Card -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 transition-all duration-300 hover:border-yellow-500/50 hover:shadow-lg hover:shadow-yellow-500/10">
+                <div class="w-12 h-12 bg-yellow-500/10 border border-yellow-500/20 rounded-xl flex items-center justify-center font-bold text-yellow-400 mb-4 text-xl">
+                    JS
                 </div>
-
-                <!-- Project 3 -->
-                <div class="glass-card rounded-2xl overflow-hidden group">
-                    <div class="h-48 bg-zinc-800/50 flex items-center justify-center group-hover:bg-zinc-800 transition">
-                        <i data-lucide="globe" class="w-12 h-12 text-zinc-600"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Global Connect</h3>
-                        <p class="text-zinc-400 text-sm mb-4">Networking portal for collaborative tech ventures.</p>
-                        <div class="flex gap-2">
-                            <span class="text-[10px] bg-zinc-800 px-2 py-1 rounded text-zinc-400 uppercase">UI/UX</span>
-                            <span class="text-[10px] bg-zinc-800 px-2 py-1 rounded text-zinc-400 uppercase">Design</span>
-                        </div>
-                    </div>
-                </div>
+                <h3 class="text-xl font-bold text-slate-100 mb-2">JavaScript</h3>
+                <p class="text-xs font-semibold uppercase tracking-wider text-yellow-400 mb-3">Programming Language</p>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    A programming language that brings web pages to life with interactivity, animations, dynamic content, and user-driven behavior.
+                </p>
             </div>
         </div>
-    </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="py-12 border-t border-zinc-900 text-center bg-zinc-950">
-        <div class="mb-6 flex justify-center gap-6">
-             <a href="https://github.com/MTC2026" target="_blank" class="text-zinc-500 hover:text-white transition">
-                <i data-lucide="github" class="w-6 h-6"></i>
-             </a>
-             <div class="text-zinc-500 border-l border-zinc-800 pl-6 flex items-center gap-2">
-                <i data-lucide="terminal" class="w-4 h-4"></i>
-                <span class="text-xs uppercase font-bold tracking-widest">MTC Dev Environment</span>
-             </div>
-        </div>
-        <p class="text-zinc-600 text-xs uppercase tracking-tighter">
-            &copy; 2026 Darshan N Lal. All Rights Reserved. Master of Tech Companies (MTC).
-        </p>
+    <footer class="max-w-3xl mx-auto w-full text-center py-6 text-slate-500 text-sm">
+        Darshan N Lal • Web Portfolio
     </footer>
 
-    <script>
-        // Initialize Lucide Icons
-        lucide.createIcons();
-
-        // Hero Background Animation
-        const canvas = document.getElementById('hero-canvas');
-        const ctx = canvas.getContext('2d');
-        let particles = [];
-
-        function resize() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        }
-
-        window.addEventListener('resize', resize);
-        resize();
-
-        class Particle {
-            constructor() {
-                this.x = Math.random() * canvas.width;
-                this.y = Math.random() * canvas.height;
-                this.size = Math.random() * 2 + 1;
-                this.speedX = Math.random() * 0.5 - 0.25;
-                this.speedY = Math.random() * 0.5 - 0.25;
-                this.opacity = Math.random() * 0.5;
-            }
-
-            update() {
-                this.x += this.speedX;
-                this.y += this.speedY;
-
-                if (this.x > canvas.width) this.x = 0;
-                if (this.x < 0) this.x = canvas.width;
-                if (this.y > canvas.height) this.y = 0;
-                if (this.y < 0) this.y = canvas.height;
-            }
-
-            draw() {
-                ctx.fillStyle = `rgba(96, 165, 250, ${this.opacity})`;
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fill();
-            }
-        }
-
-        function init() {
-            particles = [];
-            for (let i = 0; i < 80; i++) {
-                particles.push(new Particle());
-            }
-        }
-
-        function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            particles.forEach(p => {
-                p.update();
-                p.draw();
-            });
-            requestAnimationFrame(animate);
-        }
-
-        init();
-        animate();
-    </script>
 </body>
 </html>
+
+
